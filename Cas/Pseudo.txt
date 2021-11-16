@@ -2,17 +2,13 @@
 <html>
 <head>
 <Style>
-    .vezba{width: 200px;
-    height: 200px;
-    background-color: springgreen;
-    }
-</Style>
+#prvidiv{background-color:black ;
+border: 1px solid gray;
+border-radius: 0px;}
+</style>
 </head>
-<body>
-    
-<div class="vezba">
 
-</div>
-    
+<body>
+    <div></div>
+        
 </body>
-</html>

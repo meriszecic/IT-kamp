@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>  
+<style>
+
+ @keyframes block {
+  0% { width: 100px;
+height: 100px;
+box-shadow:gray 10px 13px 13px;}
+  25% {width: 50px;
+    height: 200px;
+    box-shadow:gray 10px 13px 13px;}
+  50%{width: 400px;
+    height: 400px;
+    box-shadow:gray 10px 13px 13px;}
+  75%{width: 50px;
+    height: 300px;
+    box-shadow:gray 10px 13px 13px;}
+  100%{width: 100px;
+    height: 100px;
+    box-shadow: gray 5px 15px 5px inset;}        
+ }
+.block{background-color: rgb(206, 203, 203);
+display: flex;
+justify-content: center;
+align-items: center; 
+width: 100px;
+height: 100px;
+box-shadow:gray 15px 15px 15px;
+border-radius: 10px;
+transition: 0.5s;
+animation-name: block;
+animation-duration: 5s ;
+animation-iteration-count: infinite;}
+
+</style>
+<body>
+    <div class="block">
+    
+    </div>
+
+</body>
