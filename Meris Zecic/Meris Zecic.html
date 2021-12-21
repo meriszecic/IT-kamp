@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Border</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    .pocetak {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      margin: 50px;
+    }
+    .header {
+      border: 1px solid black;
+      height: 30px;
+      width: 900px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .text1 {
+      font-size: 25px;
+    }
+    .main {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+    .prvibox {
+      border: black solid 1px;
+      width: 200px;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      border-top: none;
+      border-right: none;
+      border-bottom: none;
+    }
+    .drugibox {
+      width: 500px;
+      height: 400px;
+      border: solid black 1px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      border-bottom: none;
+      border-right: none;
+      border-top: none;
+    }
+    .trecibox {
+      border: black solid 1px;
+      width: 200px;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      border-top: none;
+      border-bottom: none;
+    }
+  </style>
+  <body>
+    <div class="pocetak">
+      <div class="header"><p class="text1">Header</p></div>
+      <div class="main">
+        <div class="prvibox"><p class="text1">Navigation</p></div>
+        <div class="drugibox"><p class="text1">Content</p></div>
+        <div class="trecibox"><p class="text1">Sidebar</p></div>
+      </div>
+      <div class="header"><p class="text1">Footer</p></div>
+    </div>
+  </body>
+</html>
