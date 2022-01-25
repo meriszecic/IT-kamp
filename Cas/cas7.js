@@ -91,7 +91,7 @@
 // console.log(fruits)
 
 // console.log(nekiEl)
-///                                                  uklanjanje elementa sa poslednjeg mesta
+///                                             pop     uklanjanje elementa sa poslednjeg mesta
 
 
 
@@ -104,7 +104,7 @@
 // console.log(fruits)
 
 // console.log(nekiEl)
-///                                                      pomeranje niza u levo
+///                                                  shift    pomeranje niza u levo
 
 
 
@@ -117,4 +117,4 @@
 // console.log(fruits)
 
 // console.log(nekiEl)
-///                                                       pomeranje niza u desno
+///                                                unshift       pomeranje niza u desno

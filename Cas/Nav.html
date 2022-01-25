@@ -1,56 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=l, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=l, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<style>
-*{padding:0 ;
-margin:0 ;
-box-sizing: border-box;}
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
 
-h1{color: grey;}
+    h1 {
+      color: grey;
+    }
 
-li{list-style-type: none;
-display: inline;
+    li {
+      list-style-type: none;
+      display: inline;
+    }
 
-}
+    #nav {
+      border: 1px solid white;
+      width: 80%;
+      height: 50px;
+      background-color: turquoise;
+    }
 
-#nav{
-    border: 1px solid white ;
-    width: 80%;
-    height: 50px;
-    background-color:turquoise;
-}
+    ul {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-evenly;
+    }
 
-ul{display: flex;
-    align-items:baseline;
-   justify-content: space-evenly;
+    .lista {
+      width: 400px;
+      height: 50px;
+      position: relative;
+      left: 500px;
+      top: 5px;
+    }
+  </style>
 
-}
-
-.lista{width: 400px;
-height: 50px;
-position: relative;
-left: 500px;
-top:5px
-
-}
-
-</style>
-
-<body>
-<div id="nav">
-        <h1>LOGO</h1>
-        <div class="lista">
-    <ul>
-        <li>Document</li>
-        <li>List</li>
-        <li>Help</li>
-      </ul>
+  <body>
+    <div id="nav">
+      <h1>LOGO</h1>
+      <div class="lista">
+        <ul>
+          <li>Document</li>
+          <li>List</li>
+          <li>Help</li>
+        </ul>
+      </div>
     </div>
-</div>
-</body>
+  </body>
 </html>
