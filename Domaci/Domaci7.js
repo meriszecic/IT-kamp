@@ -36,3 +36,22 @@ while (true) {
       break;
   }
 }
+
+// switch (operacija) {
+//   case "+":
+//     alert(br[i] + br[i]);
+//     break;
+//   case "-":
+//     alert(br[i] - br[i]);
+//     break;
+//   case "*":
+//     alert(br[i] * br[i]);
+//     break;
+//   case "/":
+//     alert(br[i] / br[i]);
+//     break;
+
+//   default:
+//     alert("pogresan unos");
+//     break;
+// }

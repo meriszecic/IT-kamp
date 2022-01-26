@@ -91,9 +91,21 @@
       display: flex;
       width: 90%;
       height: 40px;
-      margin: 20px 10px 0px 20px;
+      margin: 10px 10px 0px 20px;
       align-items: center;
       padding: 10px;
+    }
+    .datumrodjenja {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin: 18px 10px 0px 20px;
+      font-size: 15px;
+    }
+    .datum {
+      margin: none;
+      display: flex;
+      
     }
   </style>
   <body>
@@ -117,9 +129,18 @@
         <div>
           <input
             class="inputedit"
-            placeholder="Brojmobilnog telefona ili email adresa"
+            placeholder="Broj mobilnog telefona ili email adresa"
             type="email"
           />
+        </div>
+        <div>
+          <input class="inputedit" placeholder="Nova lozinka" type="password" />
+        </div>
+        <div class="datumrodjenja">
+          <p>Datum rodjenja</p>
+        </div>
+        <div class="datum">
+           <input type="date" name="dateofbirth">
         </div>
       </div>
     </div>
