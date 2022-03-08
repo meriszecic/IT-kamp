@@ -1,13 +1,10 @@
-function job(){
-    return "Hello world"
-}
-let mypromise = new Promise((tacno, netacno) => {
+function job() {
+  return new Promise((tacno, netacno) => {
     setTimeout(() => {
-        tacno(job())
-    }, 2000)
-})
-mypromise.then((j) => {
-    console.log(j)
-})
-
-job()
+      tacno("Hello world");
+    }, 2000);
+  });
+}
+job().then((res) => {
+  console.log(res);
+});
