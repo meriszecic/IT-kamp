@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 5px;
+    }
+    .elementi {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+    }
+  </style>
+  <body>
+    <form action="" id="forma" class="elementi">
+      <input type="email" name="email" id="input" />
+      <input type="name" name="name" id="input" />
+      <input type="password" name="password" id="input" />
+      <input type="username" name="ime" id="input" />
+      <button id="dugme">EVENT</button>
+    </form>
+    <script>
+        var eBtn = document.getElementById("dugme");
+
+        eBtn.addEventListener("click", (e) => {
+          e.preventDefault();
+          const user = {
+            email: e.target.form[0].value,
+            name: e.target.form[1].value,
+            password: e.target.form[2].value,
+            ime: e.target.form[3].value,
+          };
+          console.log(user);
+          
+          fetch("https://https://serene-fortress-45917.herokuapp.com//v1/auth/signup    ",
+          {
+              method: 'POST',
+              headers: {
+                  "content-type": "application/json;charset=UTF-8"
+              },
+              body: JSON.stringify(user)
+          })
+          .then(res => res.json())
+          .then(res => {
+              console.log(res);
+          })
+          .catch(err => {
+              console.log(err);
+          })
+      });
+    </script>
+  </body>
+</html>
