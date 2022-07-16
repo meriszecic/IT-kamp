@@ -1,0 +1,22 @@
+.container {
+  width: 100%;
+  background-color: rgb(72, 72, 72);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  size: 50%;
+}
+.dugme1 {
+  width: 5%;
+  height: 10%;
+  text-shadow: 1px 2px 3px;
+  background-color: gray;
+  font-size: 30px;
+}
+.broj {
+  color: white;
+  font-size: 40px;
+  margin: 30px;
+  text-shadow: 1px 1px 3px;
+}
